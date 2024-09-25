@@ -1,0 +1,5 @@
+<!-- Simple Hamburger Icon SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M3,6H21A1,1 0 0,0 21,8H3A1,1 0 0,0 3,6M3,12H21A1,1 0 0,0 21,14H3A1,1 0 0,0 3,12M3,18H21A1,1 0 0,0 21,20H3A1,1 0 0,0 3,18Z" />
+</svg>
+

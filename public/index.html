@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KBDZ - Premier Modded Console Gaming Server</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- AOS Library for Animations (Optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-pw4kMd+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="theme-dark-magenta">
     <!-- Header -->
     <header class="header">
         <div class="container">
             <h1 class="logo">KBDZ</h1>
             <nav class="nav">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#community">Community</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
                     <li><a href="#download">Join Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <img src="icons/theme-toggle.svg" alt="Toggle Theme">
+                </button>
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <img src="icons/menu.svg" alt="Menu">
+                </button>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section 1 -->
-    <section class="hero hero1" id="about">
+    <section class="hero hero1" id="about" data-aos="fade-up">
         <div class="container">
             <h2>Welcome to KBDZ</h2>
             <p>Experience the ultimate modded console gaming with KBDZ—a 32-slot PvP/PvE server based in NY, USA. Dive into intense battles, explore vast territories, and enjoy a seamless gaming experience like never before.</p>
@@ -33,31 +42,31 @@
     </section>
 
     <!-- Hero Section 2 -->
-    <section class="hero hero2" id="features">
+    <section class="hero hero2" id="features" data-aos="fade-up">
         <div class="container">
             <h2>Server Features</h2>
             <div class="features">
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in">
                     <h3>Safe Zone</h3>
                     <p>Explore massive trader stores and dealerships in our secure Safe Zone, patrolled by hired mercenaries to ensure your safety.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="100">
                     <h3>Modded Features</h3>
                     <p>Access exclusive modded features like airlifts to spawn in stores, vehicles, and animals for a customized gaming experience.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="200">
                     <h3>Player Systems</h3>
                     <p>Engage with our comprehensive player stats system featuring leaderboards and player card minting to showcase your achievements.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="300">
                     <h3>Economy & Casino</h3>
                     <p>Participate in our robust banking system and try your luck at the casino to earn and manage your in-game wealth.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="400">
                     <h3>Faction & Territory</h3>
                     <p>Join or create factions, claim territories, and engage in strategic battles to dominate the server.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="zoom-in" data-aos-delay="500">
                     <h3>Bounty System</h3>
                     <p>Take on bounties to earn rewards and climb the ranks in our dynamic PvP/PvE environment.</p>
                 </div>
@@ -66,11 +75,22 @@
     </section>
 
     <!-- Community Section -->
-    <section class="hero hero3" id="community">
+    <section class="hero hero3" id="community" data-aos="fade-up">
         <div class="container">
             <h2>Join Our Community</h2>
             <p>Connect with over 300 active members on our Discord server. Access exclusive modded features, participate in events, and collaborate with fellow gamers to enhance your KBDZ experience.</p>
             <a href="https://discord.gg/your-invite-link" class="btn">Join Discord</a>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="hero hero4" id="leaderboard" data-aos="fade-up">
+        <div class="container">
+            <h2>Leaderboard</h2>
+            <div id="leaderboard-grid" class="leaderboard-grid">
+                <!-- Leaderboard tiles will be injected here -->
+                <p>Loading leaderboard...</p>
+            </div>
         </div>
     </section>
 
@@ -87,7 +107,16 @@
         </div>
     </footer>
 
+    <!-- AOS Library for Animations (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
 
