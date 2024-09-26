@@ -18,9 +18,14 @@ body {
     margin: 0 auto;
 }
 
+.header > .container {
+    display: flex;
+    flex-flow: row;
+}
+
 /* Header */
 .header {
-    background-color: #2e0b36;
+    background-color: #2e0b365e;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -30,6 +35,11 @@ body {
 .logo {
     font-size: 2rem;
     color: #ff00ff;
+}
+
+.nav {
+    align-content: center;
+    padding-left: 50px;
 }
 
 .nav ul {
@@ -56,7 +66,7 @@ body {
 }
 
 .hero1 {
-    background: url('images/hero1-bg.jpg') no-repeat center center/cover;
+    background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjUzdWlwdW10azd2cnExODVxc3dkZjliNGEwM290bDd4MTBzazk2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IXBvKEswF9gtzC41CX/giphy.webp) no-repeat center center / cover;
 }
 
 .hero2 {
@@ -149,6 +159,25 @@ body {
 
 .social a:hover img {
     transform: scale(1.1);
+}
+
+span.title {
+    background: #0a0a0a;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    color: #f7f7f7;
+    font-style: italic;    
+}
+
+.hero1 > .container > p {
+    background: #141414a1;
+    color: #f3f3f3;
+}
+
+.safe-zone {
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExanE4d3lmeDk1dzUyc3o3YWQ1eWZmYmZlZzMzNDJsaHd1NzZtODN3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/usseqC3iZZTgWssw6J/giphy.webp);
 }
 
 /* Responsive */
