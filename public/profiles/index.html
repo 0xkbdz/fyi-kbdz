@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Gaming Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optional: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Loading profile...</p>
+    </div>
+    <header>
+	    <div>
+	    	<img src="avatar-placeholder.svg" alt="Avatar" class="avatar">
+      	<h1 id="survivor-name">Survivor Name</h1>
+      	<p id="rank">Rank: --</p>
+	    </div>
+	        <section class="leaderboard">
+			      <h2>Leaderboard</h2>
+			            <p id="leaderboard-rank">Rank: --</p>
+				          <p id="leaderboard-score">Score: --</p>
+					        <p id="leaderboard-of">of -- players</p>
+						    </section>
+    </header>
+
+    <section class="stats">
+      <h2>Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Kills</h3>
+          <p id="kills">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-skull-crossbones"></i>
+          <h3>Deaths</h3>
+          <p id="deaths">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-balance-scale"></i>
+          <h3>K/D Ratio</h3>
+          <p id="kd">0.0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-fire"></i>
+          <h3>Damage</h3>
+          <p id="damage">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Speed</h3>
+          <p id="bestmeters">0m</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-head-side-virus"></i>
+          <h3>Headshots</h3>
+          <p id="hs">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-brain"></i>
+          <h3>Brainshots</h3>
+          <p id="bs">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-wallet"></i>
+          <h3>Bank</h3>
+          <p id="bank">$0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-briefcase"></i>
+          <h3>Wages</h3>
+          <p id="wages">$0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-clock"></i>
+          <h3>Survival Time</h3>
+          <p id="cst">0h</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-star"></i>
+          <h3>Best Survival Time</h3>
+          <p id="bst">0h</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-hourglass-start"></i>
+          <h3>Time on Server</h3>
+          <p id="ton">0h</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-network-wired"></i>
+          <h3>Online</h3>
+          <p id="online">No</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-star-of-life"></i>
+          <h3>Score</h3>
+          <p id="score">0</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-user-shield"></i>
+          <h3>KOS Authorized</h3>
+          <p id="kosauthorized">No</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 kbdz.fyi</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,247 @@
+/* styles.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #bb0000;
+}
+
+header h1 {
+  margin-top: 15px;
+  font-size: 6.5em;
+  color: #bb0000;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #bbbbbb;
+}
+
+/* Statistics Section */
+.stats {
+  margin: 40px 0;
+}
+
+.stats h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #bb0000;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+}
+
+.stat-card i {
+  font-size: 2em;
+  color: #bb0000;
+  margin-bottom: 10px;
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.stat-card p {
+  font-size: 4em;
+  color: #bbbbbb;
+  overflow-wrap:break-word;
+}
+
+/* Leaderboard Section */
+.leaderboard {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.leaderboard h2 {
+  font-size: 2em;
+  color: #bb0000;
+  margin-bottom: 20px;
+}
+
+.leaderboard p {
+  font-size: 4em;
+  color: #bbbbbb;
+  margin: 10px 0;
+
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  color: #bbbbbb;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .stat-card p {
+    font-size: 1.2em;
+  }
+}
+
+/* Adjust avatar size on smaller screens */
+@media (max-width: 480px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .stat-card h3 {
+    font-size: 1em;
+  }
+
+  .stat-card p {
+    font-size: 1.2em;
+  }
+}
+
+/* Stack stats vertically on very small screens */
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading Spinner Styles */
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #bb0000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide loading spinner once content is loaded */
+.loaded #loading {
+  display: none;
+}
+
+        header {
+            display: flex;
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+        }
+
+        header > div, .leaderboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px; /* Add some space between the sections */
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        h1, p {
+            margin: 5px 0;
+        }
+
+        .leaderboard {
+            text-align: center;
+        }
+
+        @keyframes neonColorCycle {
+            0% { color: #f72585; }    /* Neon Pink */
+            20% { color: #4cc9f0; }   /* Neon Blue */
+            40% { color: #4895ef; }   /* Bright Sky Blue */
+            60% { color: #f1fa3c; }   /* Neon Yellow */
+            80% { color: #80ffdb; }   /* Neon Mint */
+            100% { color: #ffd60a; }  /* Neon Orange-Yellow */
+        }
+
+        /* Apply the animation to all heading elements */
+        h1, h2, h3, h4, h5, h6 {
+            animation: neonColorCycle 1s infinite; /* 5 seconds cycle */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect */
+        }

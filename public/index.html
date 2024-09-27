@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KBDZ - Premier Modded Console Gaming Server</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +26,7 @@
     </header>
 
     <!-- Hero Section 1 -->
-    <section class="hero hero1" id="about">
+    <section class="kb-hero kb-hero1" id="about">
         <div class="container">
             <h2><span class="title">!KILLBOX</span></h2>
             <p>Experience the ultimate modded console gaming with KBDZ—a 32-slot PvP/PvE server based in NY, USA. Dive into intense battles, explore vast territories, and enjoy a seamless gaming experience like never before.</p>
@@ -51,8 +52,23 @@
         </div>
     </section>
 
+<!-- Hero Section 5 -->
+<section class="kb-hero kb-hero5" id="survivors-search">
+	<div class="container">
+		<h2>Survivor Search</h2>
+  <div class="typeahead-container">
+    <input id="serverTypeahead" class="input is-primary is-large" type="text" placeholder="Search server..." />
+    <input id="survivorTypeahead" class="input is-primary is-large" type="text" placeholder="Search survivor..." disabled />
+  </div>
+
+  <div id="dataGrid" class="data-grid">
+    <!-- Data grid will be dynamically generated here -->
+  </div>
+	</div>
+</section>
+
     <!-- Hero Section 2 -->
-    <section class="hero hero2" id="features">
+    <section class="kb-hero kb-hero2" id="features">
         <div class="container">
             <h2>Server Features</h2>
             <div class="features">
@@ -85,7 +101,7 @@
     </section>
 
     <!-- Community Section -->
-    <section class="hero hero3" id="community">
+    <section class="kb-hero kb-hero3" id="community">
         <div class="container">
             <h2>Join Our Community</h2>
             <p>Connect with over 300 active members on our Discord server. Access exclusive modded features, participate in events, and collaborate with fellow gamers to enhance your KBDZ experience.</p>
@@ -110,6 +126,7 @@
     </footer>
 
     <script type="module" src="script.js"></script>
+    <script type="module" src="survivors-search.js"></script>
 </body>
 </html>
 

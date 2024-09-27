@@ -70,34 +70,34 @@ body {
 }
 
 /* Hero Sections */
-.hero {
+.kb-hero {
     padding: 100px 0;
     text-align: center;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
 }
 
-.hero1 {
+.kb-hero1 {
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
     background: url(https://cdn.discordapp.com/attachments/1160644531335737444/1223402410870046811/3dgifmaker36651.gif?ex=66f73548&is=66f5e3c8&hm=00c03ceb26fe4e722a6180ed0c32ec1c381b409ebb39392593208ec008b10c32&) no-repeat center center / cover
 }
 
-.hero2 {
+.kb-hero2 {
     background: linear-gradient(39deg, #2b2b2b, #0e0e0e);
     background-color: #2a0a2e;
 }
 
-.hero3 {
+.kb-hero3 {
     background: linear-gradient(41deg, #2b2b2b, #0e0e0e);
     background-color: #1e0720;
 }
 
-.hero h2 {
+.kb-hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #f3f3f3;
 }
 
-.hero p {
+.kb-hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -193,7 +193,7 @@ span.title {
     font-style: italic;    
 }
 
-.hero1 > .container > p {
+.kb-hero1 > .container > p {
     background: #141414a1;
     color: #f3f3f3;
 }
@@ -257,3 +257,26 @@ span.title {
     }
 }
 
+    .kb-hero5 > .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .typeahead-container {
+      margin-bottom: 20px;
+    }
+    .typeahead-container > input {
+    	display:inline;
+	width: 300px;
+    }
+    .typeahead-container > input:last-child {
+    	margin-left:15px;
+    }
+    .data-grid {
+      width: 80%;
+      max-width: 1000px;
+    }
+    table {
+      width: 100%;
+    }
