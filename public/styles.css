@@ -8,7 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    background-color: #1a0a23;
+    background-color: #0e0e0e;
     line-height: 1.6;
 }
 
@@ -18,6 +18,15 @@ body {
     margin: 0 auto;
 }
 
+.logo-spinner {
+    background: url('https://cdn.discordapp.com/attachments/1160644531335737444/1221108300007997491/3dgifmaker12761.gif?ex=66f6c5b9&is=66f57439&hm=54d1e45705d1d41538b4f9127a3b8bdffab0f6603214da03bb77d1cc83b38b66&');
+    height: 25px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header > .container {
     display: flex;
     flex-flow: row;
@@ -25,7 +34,8 @@ body {
 
 /* Header */
 .header {
-    background-color: #2e0b365e;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(127deg, #232323af, #0e0e0ebb);
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -63,24 +73,28 @@ body {
 .hero {
     padding: 100px 0;
     text-align: center;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
 }
 
 .hero1 {
-    background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjUzdWlwdW10azd2cnExODVxc3dkZjliNGEwM290bDd4MTBzazk2bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IXBvKEswF9gtzC41CX/giphy.webp) no-repeat center center / cover;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+    background: url(https://cdn.discordapp.com/attachments/1160644531335737444/1223402410870046811/3dgifmaker36651.gif?ex=66f73548&is=66f5e3c8&hm=00c03ceb26fe4e722a6180ed0c32ec1c381b409ebb39392593208ec008b10c32&) no-repeat center center / cover
 }
 
 .hero2 {
+    background: linear-gradient(39deg, #2b2b2b, #0e0e0e);
     background-color: #2a0a2e;
 }
 
 .hero3 {
+    background: linear-gradient(41deg, #2b2b2b, #0e0e0e);
     background-color: #1e0720;
 }
 
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #ff00ff;
+    color: #f3f3f3;
 }
 
 .hero p {
@@ -91,8 +105,8 @@ body {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #ff00ff;
-    color: #1a0a23;
+    background-color: #222;
+    color: #eee;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -100,7 +114,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #e600e6;
+    background-color: #ccc;
+    color: #333;
 }
 
 /* Features Section */
@@ -125,22 +140,29 @@ body {
 
 .feature h3 {
     margin-bottom: 10px;
-    color: #ff00ff;
+    color: #f3f3f3;
 }
 
 .feature p {
     font-size: 1rem;
+    background-color: #0e0e0ee0;
 }
 
 /* Footer */
 .footer {
-    background-color: #2e0b36;
     padding: 30px 0;
     text-align: center;
+    background: linear-gradient(60deg, #111, #0e0e0e);
 }
 
 .footer p {
     margin-bottom: 15px;
+    color: #3f3f3f;
+    font-size: 13px;
+}
+
+.social {
+    margin-top: 35px;
 }
 
 .social a {
@@ -177,7 +199,49 @@ span.title {
 }
 
 .safe-zone {
-    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExanE4d3lmeDk1dzUyc3o3YWQ1eWZmYmZlZzMzNDJsaHd1NzZtODN3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/usseqC3iZZTgWssw6J/giphy.webp);
+    background: url('https://media.discordapp.net/attachments/1165278510877773847/1208041968026914887/killbox-zones-spinner-002.gif?ex=66f6b2c1&is=66f56141&hm=8b620b2bc4e0468382b09f801a5cacf080874408c0d4c2c8b1b1aab08f11d64e&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modded-features {
+    background: url('https://media.discordapp.net/attachments/1160337904057462865/1208034584206385162/killbox-airlift-spinner-003.gif?ex=66f6abe1&is=66f55a61&hm=be30144de2f9a92c3d85ad089e765045cd3617da0355f10a9117e63d75007f46&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player-systems {
+    background: url('https://media.discordapp.net/attachments/1163203551196090449/1225281206514614342/killbox-leaderboard-spinner-002.gif?ex=66f6cacc&is=66f5794c&hm=74b42f346c88033cd9a97621e51eaf2419f054bdbc87c32a34b6d605604adfc1&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.economy-casino {
+    background: url('https://media.discordapp.net/attachments/1160644531335737444/1163859546691870780/killbox-bank-spinner-001.gif?ex=66f6cdab&is=66f57c2b&hm=275b3d4886a9c1075c23586fca4d32d890024c4944cbe0baf22d9da5770993d5&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faction-territory {
+    background: url('https://media.discordapp.net/attachments/1217106047760863293/1225991214000771163/killbox-territories-spinner-001.gif?ex=66f6bd0b&is=66f56b8b&hm=ad6314f1e31a7e7697307866ff46de7af5be0452c5a73c186cb7f9253daa2df0&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bounty-system {
+    background: url('https://media.discordapp.net/attachments/1196831739084013708/1224000888637624471/killbox-bounty-spinner-002.gif?ex=66f6bfa8&is=66f56e28&hm=45b1c15922b444cd10f285c6bae4717dbb5882b3dffbdd59f0d76226ab9b5a3c&=&width=171&height=171');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature > h3 > span {
+    background-color: #101010d9;
 }
 
 /* Responsive */
