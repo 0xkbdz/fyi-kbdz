@@ -117,23 +117,18 @@ a:hover {
   align-items: center;
 }
 
-.logo-text {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-text);
-  text-shadow: 2px 2px 4px rgba(179, 0, 0, 0.5);
-  position: relative;
+.logo-image {
+  height: 160px;
+  margin-top: 84px;
+  /* width: 284px; 40px * 16/9 = ~71px for 16:9 aspect ratio */
+  /* object-fit: cover;
+  object-position: center; */
+  border-radius: 4px;
+  transition: var(--transition-fast);
 }
 
-.logo-text::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-accent) 0%, transparent 100%);
+.logo-image:hover {
+  filter: drop-shadow(2px 2px 4px rgba(179, 0, 0, 0.5));
 }
 
 .nav-menu {
@@ -225,14 +220,15 @@ a:hover {
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border: 2px solid var(--color-accent-dark);
+  animation: pulseGlow 2s infinite;
 }
 
 .btn-secondary:hover {
-  background: var(--color-accent);
-  color: var(--color-text);
+  background: var(--color-accent-dark);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
 }
 
