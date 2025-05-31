@@ -413,6 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         @media (max-width: 768px) {
             .nav-links {
+                display: flex !important;
                 position: fixed;
                 top: 60px;
                 left: 0;
