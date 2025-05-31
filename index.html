@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>KILLBOX: Xbox DayZ Server | Join the Bloody Carnage</title>
+    <meta name="description" content="KILLBOX is the ultimate Xbox DayZ gameserver—experience relentless PvP action, epic raids, and a thriving Discord community. Subscribe now and never miss a bloodbath!">
+    <meta name="keywords" content="Xbox DayZ, DayZ server, KILLBOX, DayZ PvP, Xbox gaming, zombie survival, DayZ Discord">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="KILLBOX: Xbox DayZ Server | Join the Bloody Carnage">
+    <meta property="og:description" content="Subscribe to KILLBOX and join our Discord for nonstop DayZ action on Xbox. Live leaderboard and exclusive updates!">
+    <meta property="og:image" content="https://kbdz.fyi/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://kbdz.fyi">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KILLBOX: Xbox DayZ Server">
+    <meta name="twitter:description" content="Join KILLBOX for unrelenting Xbox DayZ PvP action—subscribe for updates & join our Discord!">
+    <meta name="twitter:image" content="https://kbdz.fyi/assets/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KILLBOX",
+        "url": "https://kbdz.fyi",
+        "logo": "https://kbdz.fyi/assets/images/logo.png",
+        "sameAs": [
+            "https://www.tiktok.com/@_killbox",
+            "https://twitter.com/killboxdayz",
+            "https://www.youtube.com/@killboxdayz",
+            "https://discord.gg/tJkNvDj6ns"
+        ]
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#" aria-label="KILLBOX Home">
+                    <span class="logo-text">KILLBOX</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="https://discord.gg/tJkNvDj6ns" target="_blank" rel="noopener">Discord</a></li>
+                </ul>
+                <div class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="assets/video/hero-background.mp4" type="video/mp4">
+                </video>
+                <div class="hero-fallback"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">KILLBOX: The Ultimate Xbox DayZ Bloodbath</h1>
+                <h2 class="hero-subtitle">Survive. Dominate. Return for More.</h2>
+                <div class="hero-ctas">
+                    <a href="#subscribe" class="btn btn-primary cta-subscribe" aria-label="Subscribe to KILLBOX updates">
+                        SUBSCRIBE NOW
+                    </a>
+                    <a href="https://discord.gg/tJkNvDj6ns" class="btn btn-secondary cta-discord" aria-label="Join KILLBOX Discord Server" target="_blank" rel="noopener">
+                        JOIN DISCORD
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Section -->
+        <section id="subscribe" class="subscription-section">
+            <div class="container">
+                <h2>Never Miss a Raid</h2>
+                <p>Get exclusive server updates, event announcements, and insider news delivered straight to your inbox.</p>
+                
+                <form class="subscription-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I agree to receive email updates from KILLBOX. <a href="/privacy-policy.html" target="_blank">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Live Leaderboard Section -->
+        <section id="leaderboard" class="leaderboard-section">
+            <div class="container">
+                <h2>Live Killbox Leaderboard</h2>
+                <p>Top Players on KILLBOX Xbox DayZ Server – Updated Every 30 Seconds.</p>
+                
+                <div class="leaderboard-container" aria-live="polite">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Player Name</th>
+                                <th scope="col">Kills</th>
+                                <th scope="col">Deaths</th>
+                                <th scope="col">K/D Ratio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <!-- Leaderboard data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                    <noscript>
+                        <div class="no-js-message">Live leaderboard available when JavaScript is enabled.</div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section id="socials" class="social-section">
+            <div class="container">
+                <h2>Follow Us</h2>
+                <p>Join the carnage on social media for sneak peeks, highlights, and server news.</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@_killbox" target="_blank" rel="noopener" aria-label="Follow us on TikTok" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/killboxdayz" target="_blank" rel="noopener" aria-label="Follow us on Twitter" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@killboxdayz" target="_blank" rel="noopener" aria-label="Follow us on YouTube" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" fill="currentColor"/>
+                            <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="#0d0d0d"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About KILLBOX</h2>
+                <div class="about-content">
+                    <p>KILLBOX is the premier Xbox DayZ server delivering relentless PvPvE action where only the strongest survive. Experience the ultimate test of survival in a world where betrayal lurks around every corner and every decision could be your last.</p>
+                    
+                    <p>Our server features custom mods, 24/7 uptime, an active admin team, and seasonal events that keep the carnage fresh. Whether you're a lone wolf or leading a squad, KILLBOX offers an unforgiving environment where legends are born in blood.</p>
+                    
+                    <p>Join a thriving community of survivors who live for the thrill of the hunt. Daily bloodbaths, unforgettable betrayals, and epic raids await those brave enough to enter the KILLBOX. Do you have what it takes to dominate the wasteland?</p>
+                </div>
+                
+                <div class="features-list">
+                    <ul>
+                        <li>✔ Custom PvPvE Mods</li>
+                        <li>✔ 24/7 Admin Support</li>
+                        <li>✔ Weekly Raid Events</li>
+                        <li>✔ Active Discord Community</li>
+                        <li>✔ Real-time Leaderboards</li>
+                        <li>✔ Seasonal Tournaments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">KILLBOX</div>
+                <p>&copy; 2024 KILLBOX. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <div class="footer-social">
+                    <span>Follow Us</span>
+                    <div class="footer-social-icons">
+                        <a href="https://www.tiktok.com/@_killbox" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
+                        <a href="https://x.com/killboxdayz" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+                        <a href="https://www.youtube.com/@killboxdayz" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/leaderboard.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 

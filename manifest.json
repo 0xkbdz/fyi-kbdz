@@ -1,0 +1,70 @@
+{
+  "name": "KILLBOX - Xbox DayZ Server",
+  "short_name": "KILLBOX",
+  "description": "The ultimate Xbox DayZ server delivering relentless PvP action, epic raids, and a thriving Discord community.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#b30000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-apple-touch.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "KILLBOX landing page on desktop"
+    },
+    {
+      "src": "assets/images/screenshot-narrow.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "KILLBOX landing page on mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Leaderboard",
+      "short_name": "Leaderboard",
+      "description": "Check live player rankings",
+      "url": "/#leaderboard",
+      "icons": [{ "src": "assets/images/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Join Discord",
+      "short_name": "Discord",
+      "description": "Join our community",
+      "url": "https://discord.gg/killbox"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "xbox",
+      "url": "https://www.microsoft.com/en-us/p/dayz/bqslsq6l6xp0"
+    }
+  ]
+} 
